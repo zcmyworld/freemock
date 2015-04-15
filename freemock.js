@@ -1,28 +1,3 @@
-/*
-##examples:
-var freemock = require('./../freemock');
-freemock.start({
-});
-var mockObj = freemock.getMock(mod);
-mockObj.setMethod({
-    "method1":{
-        willReturn:1,//假象方法将返回的值
-        willCallback:function(){},//假象方法将执行的回调
-        expectArgs:[1,2],//假象方法预期的参数
-        willThrow:new Error(),//假象方法会返回的异常
-        runTime:1//假象方法会被执行的次数
-    },
-    "method2":{
-        willReturn:1,//假象方法将返回的值
-        willCallback:function(){},//假象方法将执行的回调
-        expectArgs:[1,2],//假象方法预期的参数
-        willThrow:new Error(),//假象方法会返回的异常
-        runTime:1//假象方法会被执行的次数
-    },
-    ...
-})
-freemock.end();
-*/
 
 var m = require('module');
 var originalLoader = null;
